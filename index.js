@@ -24,6 +24,7 @@ app.get('/',function(req,res){
 
     // res.send("Welcome to coding competition,Archana Raj,Norka B3");
 });
-app.listen(3030,function(){
+app.listen(process.env.PORT || 3030,()=>{
+
     console.log("Listening to port 3030");
 });
